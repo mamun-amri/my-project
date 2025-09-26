@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "animate.css";
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@theme {
+  --color-primary: oklch(70.4% 0.14 182.503);
+  --color-dark: oklch(20.8% 0.042 265.755);
+  --color-secondary: oklch(55.4% 0.046 257.417);
+}
+
+.nav-fixed {
+  @apply fixed z-50 backdrop-blur-[5px] shadow-sm bg-radial from-white from-0% to-transparent bg-[size:4px_4px];
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 bg-dark block;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
