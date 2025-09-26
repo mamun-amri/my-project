@@ -1,6 +1,7 @@
 import Aos from "aos";
 import CardSkill from "./ui/CardSkill";
 import LinkIcon from "./ui/LinkIcon";
+import hero from "./assets/hero.png";
 
 function App() {
   Aos.init();
@@ -35,7 +36,7 @@ function App() {
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:mt-9 lg:right-0">
                 <img
-                  src="/assets/hero.png"
+                  src={hero}
                   alt="Mamun Amri"
                   className="mx-auto max-w-full"
                 />
